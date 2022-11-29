@@ -1,10 +1,10 @@
 //The Prime Number Problem
 function identifyPrime(num) {
-    let num2=false;
-    if(num>1){
+    let num2=true;
+    if(num==1){
         for(i=2;i<num;i++){
             if(num%i!=0){
-                num2=true;
+                num2=false;
                 break;
             }
         }
@@ -17,9 +17,9 @@ function identifyPrime(num) {
 function checkPalindrome(N, str) {
     //write code here
     p="";
-    for(let i=N;i>=0;i--){
+    for(let i=N-1;i>=0;i--){
         p+=str[i]
-    }if(str!=p){
+    }if(str==p){
         console.log("Yes");
     }else{
         console.log("No")
