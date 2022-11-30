@@ -1,10 +1,10 @@
 //The Prime Number Problem
 function identifyPrime(num) {
-    let num2=true;
+    let num2=false;
     if(num==1){
         for(i=2;i<num;i++){
-            if(num%i!=0){
-                num2=false;
+            if(num%i==0){
+                num2=true;
                 break;
             }
         }
